@@ -7,7 +7,9 @@ REGISTRY_USERNAME ?= talos-rpi5
 
 TAG ?= $(shell git describe --tags --exact-match)
 
-EXTENSIONS ?= ghcr.io/siderolabs/gvisor:20250505.0@sha256:d7503b59603f030b972ceb29e5e86979e6c889be1596e87642291fee48ce380c
+EXTENSIONS ?= \
+  ghcr.io/siderolabs/gvisor:20250505.0@sha256:d7503b59603f030b972ceb29e5e86979e6c889be1596e87642291fee48ce380c \
+  ghcr.io/siderolabs/tailscale:1.84.0@sha256:37eef656cd1e866c393503cea3cb3d60174c5d4bf2bb063e74e9c1b552e822a4
 
 PKG_REPOSITORY = https://github.com/siderolabs/pkgs.git
 TALOS_REPOSITORY = https://github.com/siderolabs/talos.git

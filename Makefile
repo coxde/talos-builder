@@ -114,7 +114,7 @@ installer:
 			--base-installer-image="$(REGISTRY)/$(REGISTRY_USERNAME)/installer:$(TALOS_TAG)" \
 			--overlay-name="rpi5" \
 			--overlay-image="$(REGISTRY)/$(REGISTRY_USERNAME)/sbc-raspberrypi5:$(SBCOVERLAY_TAG)" \
-			--system-extension-image="$(EXTENSIONS_GVISOR)"
+			--system-extension-image="$(EXTENSIONS_GVISOR)" \
 			--system-extension-image="$(EXTENSIONS_TAILSCALE)"
 
 
